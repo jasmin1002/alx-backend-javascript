@@ -1,8 +1,4 @@
 node_modules/
 package-lock.json
 package.json
-0-main.js
-1-main.js
-2-main.js
-3-main.js
-4-main.js
+es6_classes_test/
