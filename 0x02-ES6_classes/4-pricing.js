@@ -3,7 +3,7 @@ export default class Pricing {
   constructor(amount, currency) {
     if (typeof amount !== "number" || isNaN(amount))
       throw TypeError("Amount must be a number");
-    if (typeof currency !== "object" && typeof currency.name !== "string")
+    if (!(currency instanceof Currency))
       throw TypeError("Not a currency");
 
     this._amount = amount;
@@ -20,7 +20,7 @@ export default class Pricing {
   }
 
   set currency(nCurrency) {
-    if (typeof nCurrency !== "object" && typeof nCurrency.name !== "string")
+    if (!(nCurrency instanceof Currency))
       throw TypeError("Not a currency");
     this._currency = nCurrency;
   }
