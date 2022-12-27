@@ -259,7 +259,7 @@
   "scripts": {
     "standard": "standard",
     "standard::fix": "standard --fix",
-    "test": "test example",
+    "test": "jest",
     "dev": "node",
     "lint": "eslint",
     "lint::fix": "eslint --fix"
