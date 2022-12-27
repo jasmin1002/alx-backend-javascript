@@ -1,2 +1,3 @@
 node_modules
 es6_basic_test/
+.eslintrc.json
