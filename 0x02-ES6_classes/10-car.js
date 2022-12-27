@@ -1,3 +1,5 @@
+import { ModuleMap } from "jest-haste-map";
+
 export default class Car {
   constructor(brand, motor, color) {
     // if (typeof brand !== 'string') throw TypeError('Brand must be a string');
@@ -8,7 +10,11 @@ export default class Car {
     this._color = color;
   }
 
+  static get [Symbol.species]() {
+    return this;
+  }
+
   cloneCar() {
-    return new this.constructor();
+    return new this.constructor[Symbol.species]();
   }
 }
