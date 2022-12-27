@@ -1,5 +1,3 @@
-import { ModuleMap } from "jest-haste-map";
-
 export default class Car {
   constructor(brand, motor, color) {
     // if (typeof brand !== 'string') throw TypeError('Brand must be a string');
