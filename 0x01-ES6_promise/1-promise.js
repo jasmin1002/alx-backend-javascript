@@ -1,6 +1,6 @@
 export default function getFullResponseFromApi(success) {
   // promise code goes here
-  return new Promise((resolve, reject) => {
+  const promise = new Promise((resolve, reject) => {
     /* eslint-disable */
     if (success) {
       resolve({ status: 200, body: 'success' })
@@ -8,4 +8,5 @@ export default function getFullResponseFromApi(success) {
       reject(Error('The fake API is not working currently'))
     };
   });
+  return promise;
 }
