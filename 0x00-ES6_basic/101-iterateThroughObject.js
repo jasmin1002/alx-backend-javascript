@@ -1,8 +1,8 @@
 export default function iterateThroughObject(reportWithIterator) {
-    const formatString = [];
+  const formatString = [];
 
-    for (const item of reportWithIterator) {
-        formatString.push(item);
-    }
-    return formatString.join(' | ');
+  for (const item of reportWithIterator) {
+    formatString.push(item);
+  }
+  return formatString.join(' | ');
 }
