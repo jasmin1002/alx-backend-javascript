@@ -1,4 +1,5 @@
-node_modules/
-es_test/
+node_modules
+es_test
 .eslintrc.json
 .babelrc
+tests
