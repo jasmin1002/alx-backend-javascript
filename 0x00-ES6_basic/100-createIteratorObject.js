@@ -11,6 +11,7 @@ export default function createIteratorObject(report) {
       return {
         next() {
           return idx < members.length
+            /* eslint-disable */
             ? { done: false, value: members[idx++] }
             : { done: true };
         },
