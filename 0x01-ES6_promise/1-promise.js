@@ -1,5 +1,5 @@
 export default function getFullResponseFromApi(success) {
-  return promise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     /* eslint-disable */
     success
       ? resolve({ status: 200, body: 'Success' })
