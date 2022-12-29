@@ -1,5 +1,5 @@
-import uploadPhoto from './5-photo-reject.js';
-import signUpUser from './4-user-promise.js';
+import uploadPhoto from './5-photo-reject';
+import signUpUser from './4-user-promise';
 
 export default async function handleProfileSignup(firstName, lastName, fileName) {
   const promise1 = {
@@ -14,7 +14,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     const signup = await signUpUser(firstName, lastName);
     promise1.status = 'fulfilled';
     promise1.value = signup;
-  } catch(err) {
+  } catch (err) {
     promise1.status = 'rejected';
     promise1.value = err.toString();
   }
@@ -23,7 +23,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     const upload = await uploadPhoto(fileName);
     promise2.status = 'fulfilled';
     promise2.value = upload;
-  } catch(err) {
+  } catch (err) {
     promise2.status = 'rejected';
     promise2.value = err.toString();
   }
