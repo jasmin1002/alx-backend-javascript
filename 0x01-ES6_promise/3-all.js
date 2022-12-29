@@ -8,7 +8,7 @@ export default function handleProfileSignup() {
   return Promise.all(promises)
     .then((responses) => {
       console.log(
-        `${responses[0].body} ${responses[1].firstName} ${responses[1].lastName}`
+        `${responses[0].body} ${responses[1].firstName} ${responses[1].lastName}`,
       );
     })
     .catch(() => console.log('Signup system offline'));
