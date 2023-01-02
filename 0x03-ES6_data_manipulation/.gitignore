@@ -1,3 +1,4 @@
 /node_modules
 .babelrc
 .eslintrc.js
+es6_test_data_maniputation/
