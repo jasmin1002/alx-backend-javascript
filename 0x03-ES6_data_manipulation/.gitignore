@@ -2,3 +2,4 @@
 .babelrc
 .eslintrc.cjs
 /es6_test_data_maniputation
+/tests
