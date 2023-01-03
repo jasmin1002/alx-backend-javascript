@@ -1,8 +1,12 @@
 function cleanSet(set, startString) {
-  if (!(set instanceof Set) || !startString) return '';
+  if (
+    !(set instanceof Set)
+    || !startString
+    || typeof startString !== 'string'
+  ) return '';
   const newArr = [];
   for (const entry of set) {
-    if (entry.startsWith(startString)) {
+    if (typeof entry === 'string' && entry.startsWith(startString)) {
       newArr.push(entry.substring(startString.length));
     }
   }
