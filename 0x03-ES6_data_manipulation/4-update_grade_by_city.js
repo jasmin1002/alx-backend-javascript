@@ -1,6 +1,6 @@
 function updateStudentGradeByCity(items, city, updates) {
   // Implementation
-  if (!Array.isArray(items)) return [];
+  if (!(Array.isArray(items) && Array.isArray(updates))) return [];
   return items
     .filter((item) => item.location === city)
     .map((student) => {
