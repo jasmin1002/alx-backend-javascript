@@ -4,7 +4,7 @@ function updateStudentGradeByCity(items, city, updates) {
   return items
     .filter((item) => item.location === city)
     .map((student) => {
-      student.grade = "N/A";
+      student.grade = 'N/A';
       for (const { studentId, grade } of updates) {
         if (student.id === studentId) student.grade = grade;
       }
