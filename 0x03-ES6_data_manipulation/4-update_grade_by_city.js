@@ -6,7 +6,7 @@ function updateStudentGradeByCity(items, city, updates) {
     .map((student) => {
       student.grade = 'N/A';
       for (const { studentId, grade } of updates) {
-        if (student.id === studentId) student.grade = grade;
+        if (student.id === studentId) student = { ...student, grade };
       }
       return student;
     });
