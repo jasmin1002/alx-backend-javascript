@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
+    devtool: 'eval-source-map',
     entry: './js/main.ts',
     output: {
         path: path.resolve(__dirname, 'public'),
