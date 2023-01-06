@@ -1,0 +1,16 @@
+const path = require('path');
+
+module.exports = {
+    mode: 'development',
+    entry: './js/main.ts',
+    output: {
+        path: path.resolve(__dirname, 'public'),
+        filename: 'main.js',
+    },
+    module: {
+        rules: [{
+            test: /\.ts$/,
+            use: 'ts-loader',
+        }],
+    }
+}
