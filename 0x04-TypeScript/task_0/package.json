@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "start": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint --fix . --ext .ts",
     "test": "jest"
   },
   "keywords": [],
